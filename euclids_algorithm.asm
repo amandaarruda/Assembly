@@ -12,7 +12,7 @@
 	final_message: .asciiz "'a' is negative."
 	
 .text
-	# Recieving the first value
+	# Receiving the first value
 	li $v0, 4 # Print the string
 	la $a0, a_value # Indicate the address of a_value
 	syscall # Execute
@@ -22,7 +22,7 @@
 	
 	move $t0, $v0 # 'a' will be at t0
 	
-	# Recieving the second value
+	# Receiving the second value
 	li $v0, 4 
 	la $a0, b_value 
 	syscall
